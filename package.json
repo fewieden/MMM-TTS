@@ -13,9 +13,9 @@
   "author": "fewieden",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fewieden/MMM-TTT/issues"
+    "url": "https://github.com/fewieden/MMM-TTS/issues"
   },
-  "homepage": "https://github.com/fewieden/MMM-TTT#readme",
+  "homepage": "https://github.com/fewieden/MMM-TTS#readme",
   "dependencies": {
     "say": "^0.9.0"
   }
