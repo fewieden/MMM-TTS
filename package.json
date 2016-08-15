@@ -1,0 +1,22 @@
+{
+  "name": "mmm-tts",
+  "version": "1.0.0",
+  "description": "Text-To-Speech Module for MagicMirror2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fewieden/MMM-TTS.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "text-to-speech"
+  ],
+  "author": "fewieden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fewieden/MMM-TTT/issues"
+  },
+  "homepage": "https://github.com/fewieden/MMM-TTT#readme",
+  "dependencies": {
+    "say": "^0.9.0"
+  }
+}
