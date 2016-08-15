@@ -21,13 +21,13 @@ Text-To-Speech Module for MagicMirror<sup>2</sup>
     }
     ```
  3. Run command `npm install` in `~/MagicMirror/modules/MMM-TTS` directory.
- 4. Run command `sudo apt-get install festival` in `~/MagicMirror/modules/MMM-TTS` directory.
+ 4. Run command `sudo apt-get install festival`.
 
 ## Config Options
 | **Option** | **Default** | **Description** |
 | --- | --- | --- |
 | `debug` | `false` | Display text to speech. |
-| `text` | `MMM-TTS` | Text to display in debug mode, while there's no text to speech. |
+| `text` | `'MMM-TTS'` | Text to display in debug mode, while there's no text to speech. |
 | `voice` | `null` | If you want another voice than default you have to install it seperately and then fill in the voice name here. http://www.festvox.org/docs/manual-2.4.0/festival_24.html#Voices |
 | `speed` | `1.0` | How fast the speech should be. |
 
