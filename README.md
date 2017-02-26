@@ -23,7 +23,7 @@ Text-To-Speech Module for MagicMirror<sup>2</sup>
         }
     }
     ```
-    
+
 1. Run command `npm install` in `~/MagicMirror/modules/MMM-TTS` directory.
 1. Run command `sudo apt-get install festival`.
 
