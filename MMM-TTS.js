@@ -1,3 +1,5 @@
+/* global Module Log */
+
 /* Magic Mirror
  * Module: MMM-TTS
  *
@@ -6,43 +8,43 @@
  * MIT Licensed.
  */
 
-Module.register("MMM-TTS",{
-	tts: "",
+Module.register('MMM-TTS', {
+    tts: '',
 
-	defaults: {
-		text: "MMM-TTS",
-		voice: null,
-		speed: 1.0,
-		debug: false
-	},
+    defaults: {
+        text: 'MMM-TTS',
+        voice: null,
+        speed: 1.0,
+        debug: false
+    },
 
-	start: function() {
-		Log.info("Starting module: " + this.name);
-		this.tts = this.config.text;
-		this.sendSocketNotification('CONFIG', this.config);
-	},
+    start() {
+        Log.info(`Starting module: ${this.name}`);
+        this.tts = this.config.text;
+        this.sendSocketNotification('CONFIG', this.config);
+    },
 
-	notificationReceived: function(notification, payload, sender){
-		if(notification === 'MMM-TTS'){
-			this.sendSocketNotification('TTS', payload);
-			this.tts = payload;
-			this.updateDom();
-		}
-	},
+    notificationReceived(notification, payload) {
+        if (notification === 'MMM-TTS') {
+            this.sendSocketNotification('TTS', payload);
+            this.tts = payload;
+            this.updateDom();
+        }
+    },
 
-	socketNotificationReceived: function(notification, payload){
-		if(notification === 'HIDE'){
-			this.tts = this.config.text;
-			this.updateDom();
-		}
-	},
+    socketNotificationReceived(notification) {
+        if (notification === 'HIDE') {
+            this.tts = this.config.text;
+            this.updateDom();
+        }
+    },
 
-	getDom: function() {
-		var wrapper = document.createElement("div");
-		if(this.config.debug === true){
-			wrapper.classList.add("thin", "small", "bright");
-			wrapper.innerHTML = this.tts;
-		}
-		return wrapper;
-	}
+    getDom() {
+        const wrapper = document.createElement('div');
+        if (this.config.debug === true) {
+            wrapper.classList.add('thin', 'small', 'bright');
+            wrapper.innerHTML = this.tts;
+        }
+        return wrapper;
+    }
 });
