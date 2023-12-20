@@ -14,7 +14,7 @@ Text-To-Speech Module for MagicMirror<sup>2</sup>
 1. Clone this repo into `~/MagicMirror/modules` directory.
 1. Configure your `~/MagicMirror/config/config.js`:
 
-    ```
+    ```js
     {
         module: 'MMM-TTS',
         position: 'top_right',
@@ -33,7 +33,7 @@ Text-To-Speech Module for MagicMirror<sup>2</sup>
 | --- | --- | --- |
 | `debug` | `false` | Display text to speech. |
 | `text` | `'MMM-TTS'` | Text to display in debug mode, while there's no text to speech. |
-| `voice` | `null` | If you want another voice than default you have to install it seperately and then fill in the voice name here. http://www.festvox.org/docs/manual-2.4.0/festival_24.html#Voices |
+| `voice` | `null` | If you want another voice than default you have to install it seperately and then fill in the voice name here. <http://www.festvox.org/docs/manual-2.4.0/festival_24.html#Voices> |
 | `speed` | `1.0` | How fast the speech should be. |
 
 ## For Developers
