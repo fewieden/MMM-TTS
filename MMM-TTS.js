@@ -13,10 +13,11 @@ Module.register('MMM-TTS', {
   tts: '',
 
   defaults: {
-    text: 'MMM-TTS',
-    voice: null,
-    speed: 1.0,
     debug: false,
+    readAtStartup: true,
+    speed: 1.0,
+    text: 'Your mirror says hello!',
+    voice: null,
   },
 
   start() {
@@ -26,6 +27,10 @@ Module.register('MMM-TTS', {
   },
 
   notificationReceived(notification, payload) {
+    if (this.config.readAtStartup && notification === 'ALL_MODULES_STARTED') {
+      this.sendSocketNotification('TTS', this.config.text);
+    }
+
     if (notification === 'MMM-TTS') {
       this.sendSocketNotification('TTS', payload);
       this.tts = payload;
