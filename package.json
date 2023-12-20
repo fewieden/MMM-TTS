@@ -1,7 +1,7 @@
 {
   "name": "mmm-tts",
   "version": "1.0.0",
-  "description": "Text-To-Speech Module for MagicMirror2",
+  "description": "Text-To-Speech Module for MagicMirror²",
   "scripts": {
     "lint": "./node_modules/.bin/eslint ."
   },

@@ -1,6 +1,7 @@
 /* global Module Log */
 
-/* Magic Mirror
+/* 
+ * MagicMirror²
  * Module: MMM-TTS
  *
  * By fewieden https://github.com/fewieden/MMM-TTS
