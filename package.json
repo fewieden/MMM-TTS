@@ -11,7 +11,9 @@
   },
   "keywords": [
     "MagicMirror",
-    "text-to-speech"
+    "text-to-speech",
+    "TTS",
+    "festival"
   ],
   "author": "fewieden",
   "license": "MIT",
