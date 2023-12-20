@@ -12,20 +12,22 @@ Text-To-Speech module for [MagicMirror²](https://github.com/MichMich/MagicMirro
 ## Installation
 
 1. Clone this repo into `~/MagicMirror/modules` directory.
-1. Configure your `~/MagicMirror/config/config.js`:
+2. Configure your `~/MagicMirror/config/config.js`:
 
     ```js
     {
         module: 'MMM-TTS',
         position: 'top_right',
         config: {
-            ...
+            readAtStartup: true,
+            speed: 1.0,
+            text: 'Hello, have a great day!'
         }
     }
     ```
 
-1. Run command `npm install` in `~/MagicMirror/modules/MMM-TTS` directory.
-1. Run command `sudo apt-get install festival`.
+3. Run command `npm install` in `~/MagicMirror/modules/MMM-TTS` directory.
+4. Run command `sudo apt-get install festival`.
 
 ## Config Options
 
